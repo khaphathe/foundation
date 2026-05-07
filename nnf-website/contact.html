@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | NNF</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.jpg" alt="NNF Logo">
+      <span>NNF</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="tagline">Talk To Us</p>
+    <h1>Contact NNF</h1>
+    <p>Reach out for donations, volunteering, sponsorships, partnerships or general enquiries.</p>
+  </div>
+</section>
+
+<section class="contact-page">
+  <div class="container contact-page-grid">
+
+    <div class="contact-info-card">
+      <h2>Get In Touch</h2>
+      <p>We would love to hear from you.</p>
+
+      <div class="contact-item">
+        <h3>Email</h3>
+        <p><a href="mailto:CSI@NNF.ORG">CSI@NNF.ORG</a></p>
+      </div>
+
+      <div class="contact-item">
+        <h3>Phone / WhatsApp</h3>
+        <p><a href="tel:+27676612043">067 661 2043</a></p>
+      </div>
+
+      <div class="contact-item">
+        <h3>Address</h3>
+        <p>Midstream Estate, Centurion</p>
+      </div>
+
+      <div class="contact-item">
+        <h3>Website</h3>
+        <p>www.nnf.org</p>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="sendContactMessage(event)">
+      <h2>Send a Message</h2>
+
+      <input type="text" id="contactName" placeholder="Your Name" required>
+      <input type="email" id="contactEmail" placeholder="Your Email" required>
+      <input type="text" id="contactSubject" placeholder="Subject" required>
+      <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Let’s work together.</h2>
+    <p>Partner with NNF and help us empower boys from rural Limpopo.</p>
+    <a href="donate.html" class="btn light">Support NNF</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>NNF</h3>
+      <p>Ntodeni Nenungwi Foundation</p>
+      <p>REG: 2021/339771/08</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>CSI@NNF.ORG</p>
+      <p>067 661 2043</p>
+      <p>Midstream Estate, Centurion</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Ntodeni Nenungwi Foundation. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
