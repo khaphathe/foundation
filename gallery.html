@@ -20,10 +20,8 @@
     <nav class="navbar" id="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
       <a href="alumni.html">Alumni</a>
-      <a href="gallery.html" class="active">Gallery</a>
-      <a href="donate.html">Donate</a>
+      <a href="donate.html">Partner</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
@@ -31,43 +29,116 @@
 
 <section class="page-hero">
   <div class="container">
-    <p class="tagline">Our Memories</p>
-    <h1>Gallery</h1>
-    <p>Click any picture to view full size or download it.</p>
+    <p class="tagline">NNF Gallery</p>
+    <h1>Moments of Impact</h1>
+    <p>Explore our awards, campaigns, pageants, career days and magazine features.</p>
   </div>
 </section>
 
-<section class="full-gallery">
+<section class="gallery-folder-section">
   <div class="container">
-    <div class="section-heading">
-      <p class="section-label">NNF In Action</p>
-      <h2>All Pictures</h2>
+
+    <div id="galleryFolders">
+      <div class="section-heading">
+        <p class="section-label">Gallery Albums</p>
+        <h2>Choose a Category</h2>
+      </div>
+
+      <div class="gallery-folder-grid">
+
+        <button type="button" class="gallery-folder-card" data-album="awards">
+          <img src="images/gallery/awards/WhatsApp Image 2025-08-11 at 19.17.19 (1) 2.jpeg" alt="Awards">
+          <div>
+            <h3>🏆 Awards</h3>
+            <p>Celebrating academic excellence and learner achievement.</p>
+            <span>27 Photos</span>
+          </div>
+        </button>
+
+        <button type="button" class="gallery-folder-card" data-album="anti">
+          <img src="images/gallery/anti-bullying/WhatsApp Image 2025-08-11 at 19.16.26.jpeg" alt="Anti-Bullying Campaign">
+          <div>
+            <h3>🛡️ Anti-Bullying Campaign</h3>
+            <p>Promoting safe, respectful and inclusive school environments.</p>
+            <span>25 Photos</span>
+          </div>
+        </button>
+
+        <button type="button" class="gallery-folder-card" data-album="pageants">
+          <img src="images/gallery/pageants/WhatsApp Image 2021-10-10 at 09.24.41.jpeg" alt="School Pageants">
+          <div>
+            <h3>👑 School Pageants</h3>
+            <p>Building confidence, public speaking and self-presentation.</p>
+            <span>20 Photos</span>
+          </div>
+        </button>
+
+        <button type="button" class="gallery-folder-card" data-album="career">
+          <img src="images/gallery/career-day/WhatsApp Image 2021-11-13 at 00.22.57 (1).jpeg" alt="Career Day">
+          <div>
+            <h3>🎓 Career Day</h3>
+            <p>Helping learners explore future careers and education pathways.</p>
+            <span>18 Photos</span>
+          </div>
+        </button>
+
+        <button type="button" class="gallery-folder-card" data-album="magazine">
+          <img src="images/gallery/magazine/WhatsApp Image 2021-11-11 at 19.19.00.jpeg" alt="Magazine Features">
+          <div>
+            <h3>📰 Magazine Features</h3>
+            <p>Media, magazine and feature moments from NNF activities.</p>
+            <span>77 Photos</span>
+          </div>
+        </button>
+
+      </div>
     </div>
 
-    <div class="full-gallery-grid">
-      <img src="images/1002786021.jpg" alt="NNF gallery picture">
-      <img src="images/1002786027.jpg" alt="NNF gallery picture">
-      <img src="images/1002786026.jpg" alt="NNF gallery picture">
-      <img src="images/1002786030.jpg" alt="NNF gallery picture">
-      <img src="images/1002786028.jpg" alt="NNF gallery picture">
-      <img src="images/1002786032.jpg" alt="NNF gallery picture">
-      <img src="images/1002786034.jpg" alt="NNF gallery picture">
-      <img src="images/1002786029.jpg" alt="NNF gallery picture">
-      <img src="images/1002786031.jpg" alt="NNF gallery picture">
-      <img src="images/1002786035.jpg" alt="NNF gallery picture">
-      <img src="images/1002786033.jpg" alt="NNF gallery picture">
-      <img src="images/1002786025.jpg" alt="NNF gallery picture">
+    <div id="albumView" class="album-view">
+      <button type="button" class="back-gallery-btn" id="backGalleryBtn">← Back to Gallery</button>
+
+      <div class="section-heading">
+        <p class="section-label" id="albumLabel">Album</p>
+        <h2 id="albumTitle">Album Title</h2>
+      </div>
+
+      <div class="album-grid" id="albumGrid"></div>
     </div>
+
   </div>
 </section>
 
-<div class="lightbox" id="lightbox">
-  <span class="close-lightbox" id="closeLightbox">&times;</span>
-  <img id="lightboxImg" src="" alt="Full gallery image">
-  <a id="downloadBtn" class="download-btn" href="#" download>Download Picture</a>
+<div class="gallery-lightbox" id="galleryLightbox">
+  <button type="button" class="lightbox-close" id="lightboxClose">×</button>
+  <button type="button" class="lightbox-nav prev" id="prevBtn">‹</button>
+  <img id="lightboxImage" src="" alt="Gallery image">
+  <button type="button" class="lightbox-nav next" id="nextBtn">›</button>
+  <a id="lightboxDownload" class="lightbox-download" href="#" download>Download</a>
 </div>
 
 <footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>NNF</h3>
+      <p>Empowering Young People. Transforming Communities.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programmes</a>
+      <a href="impact.html">Impact</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>+27 67 661 2043</p>
+      <p>admin@nnfoundation.co.za</p>
+      <p>Midstream Estate, Centurion</p>
+    </div>
+  </div>
+
   <div class="footer-bottom">
     <p>© <span id="year"></span> Ntodeni Nenungwi Foundation. All Rights Reserved.</p>
   </div>

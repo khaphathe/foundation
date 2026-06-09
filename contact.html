@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | NNF</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -20,57 +20,70 @@
     <nav class="navbar" id="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="alumni.html">Alumni</a>
+      <a href="journey.html">Our Journey</a>
+      <a href="programs.html">Programmes</a>
+      <a href="impact.html">Impact</a>
       <a href="gallery.html">Gallery</a>
-      <a href="donate.html">Donate</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="donate.html">Partner</a>
+      
     </nav>
   </div>
 </header>
 
 <section class="page-hero">
   <div class="container">
-    <p class="tagline">Talk To Us</p>
-    <h1>Contact NNF</h1>
-    <p>Reach out for donations, volunteering, sponsorships, partnerships or general enquiries.</p>
+    <p class="tagline">Get In Touch</p>
+    <h1>Contact Ntodeni Nenungwi Foundation</h1>
+    <p>Partner with us, sponsor a programme, volunteer, or learn more about our work.</p>
   </div>
 </section>
 
-<section class="contact-page">
-  <div class="container contact-page-grid">
+<section class="contact-modern">
+  <div class="container contact-modern-grid">
 
-    <div class="contact-info-card">
-      <h2>Get In Touch</h2>
-      <p>We would love to hear from you.</p>
+    <div class="contact-details-box">
+      <p class="section-label">Contact Information</p>
+      <h2>We would love to hear from you.</h2>
 
-      <div class="contact-item">
-        <h3>Email</h3>
-        <p><a href="mailto:CSI@NNF.ORG">CSI@NNF.ORG</a></p>
+      <div class="contact-detail">
+        <h3>📍 Address</h3>
+        <p>Midstream Estate, Centurion, Gauteng, South Africa</p>
       </div>
 
-      <div class="contact-item">
-        <h3>Phone / WhatsApp</h3>
-        <p><a href="tel:+27676612043">067 661 2043</a></p>
+      <div class="contact-detail">
+        <h3>📞 Phone / WhatsApp</h3>
+        <p><a href="tel:+27676612043">+27 67 661 2043</a></p>
       </div>
 
-      <div class="contact-item">
-        <h3>Address</h3>
-        <p>Midstream Estate, Centurion</p>
+      <div class="contact-detail">
+        <h3>✉️ Email</h3>
+        <p><a href="mailto:admin@nnfoundation.co.za">admin@nnfoundation.co.za</a></p>
       </div>
 
-      <div class="contact-item">
-        <h3>Website</h3>
-        <p>www.nnf.org</p>
+      <div class="contact-detail">
+        <h3>🌐 Follow Us</h3>
+        <p>Facebook: Ntodeni Nenungwi Foundation</p>
+        <p>Instagram: @NtodeniNenungwiFoundation</p>
+        <p>TikTok: NN_Foundation</p>
       </div>
     </div>
 
-    <form class="contact-form" onsubmit="sendContactMessage(event)">
-      <h2>Send a Message</h2>
+    <form class="contact-modern-form" onsubmit="sendContactMessage(event)">
+      <h2>Send Us a Message</h2>
 
       <input type="text" id="contactName" placeholder="Your Name" required>
       <input type="email" id="contactEmail" placeholder="Your Email" required>
-      <input type="text" id="contactSubject" placeholder="Subject" required>
+
+      <select id="contactSubject" required>
+        <option value="">Select Enquiry Type</option>
+        <option value="Partnership Enquiry">Partnership Enquiry</option>
+        <option value="Sponsorship Enquiry">Sponsorship Enquiry</option>
+        <option value="Volunteer Enquiry">Volunteer Enquiry</option>
+        <option value="School Programme Enquiry">School Programme Enquiry</option>
+        <option value="General Enquiry">General Enquiry</option>
+      </select>
+
       <textarea id="contactMessage" placeholder="Your Message" required></textarea>
 
       <button type="submit" class="btn primary">Send Message</button>
@@ -79,34 +92,48 @@
   </div>
 </section>
 
-<section class="cta">
+<section class="map-section">
   <div class="container">
-    <h2>Let’s work together.</h2>
-    <p>Partner with NNF and help us empower boys from rural Limpopo.</p>
-    <a href="donate.html" class="btn light">Support NNF</a>
+    <iframe
+      src="https://www.google.com/maps?q=Midstream%20Estate%20Centurion%20Gauteng%20South%20Africa&output=embed"
+      loading="lazy">
+    </iframe>
   </div>
 </section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Together, we can empower the next generation.</h2>
+    <p>Reach out today and become part of the NNF impact journey.</p>
+    <a href="partner.html" class="btn light">Partner With Us</a>
+  </div>
+</section>
+
+<a href="https://wa.me/27676612043?text=Hello%20NNF,%20I%20would%20like%20to%20know%20more%20about%20your%20programmes."
+   class="whatsapp-btn"
+   target="_blank">
+  WhatsApp
+</a>
 
 <footer class="footer">
   <div class="container footer-grid">
     <div>
       <h3>NNF</h3>
-      <p>Ntodeni Nenungwi Foundation</p>
-      <p>REG: 2021/339771/08</p>
+      <p>Empowering Young People. Transforming Communities.</p>
     </div>
 
     <div>
       <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
+      <a href="programs.html">Programmes</a>
+      <a href="impact.html">Impact</a>
       <a href="gallery.html">Gallery</a>
     </div>
 
     <div>
       <h4>Contact</h4>
-      <p>CSI@NNF.ORG</p>
-      <p>067 661 2043</p>
+      <p>+27 67 661 2043</p>
+      <p>admin@nnfoundation.co.za</p>
       <p>Midstream Estate, Centurion</p>
     </div>
   </div>
